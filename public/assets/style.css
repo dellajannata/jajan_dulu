@@ -1,0 +1,766 @@
+/* Rest of your existing CSS code */
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+p {
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+.logo {
+    max-width: 170px;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color: #f84b01e5;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* beranda Section Styles */
+.title-section {
+    text-align: center;
+    color: #820000;
+}
+
+.beranda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-left: 2em;
+}
+
+.content-section2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    ;
+}
+
+.content-section2 a:hover {
+    font-weight: bold;
+}
+
+.section-content {
+    flex: 1;
+    padding: 2rem;
+    text-align: left;
+}
+
+.section-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    outline: 2px solid #f84b01e5;
+    color: #f84b01e5;
+    padding: 0.7rem 1rem;
+    margin: 1em 2em;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f84b01e5;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    color: #F5F5F5;
+}
+
+/* Features Section Styles */
+.title-food {
+    color: #820000;
+}
+
+.title-food-1 {
+    color: #820000;
+}
+
+
+.content-1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 150px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.features {
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+.feature {
+    text-align: center;
+    margin: 1rem;
+    flex-basis: calc(33.33% - 2rem);
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.food-link {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    gap: 3em;
+}
+
+.section-content3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px;
+}
+
+.food-link .section-image2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px;
+}
+
+.food-link1 {
+    padding: 3em;
+}
+
+.food-link2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Membuat item bisa berpindah ke baris baru */
+    justify-content: space-between;
+    padding: 1em 0;
+    gap: 1em;
+    /* Menambahkan jarak antar item */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 calc(25% - 2em);
+    /* Mengatur setiap item agar mengambil 25% dari lebar container dikurangi gap */
+    max-width: calc(25% - 2em);
+    margin: 1rem 0;
+    /* Menambahkan margin atas dan bawah untuk spasi vertikal */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    /* Memastikan padding dan border termasuk dalam perhitungan lebar elemen */
+    gap: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Menambahkan efek hover */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 30%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* menu */
+.menu {
+    padding: 2em 1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* paket */
+.title-promo {
+    font-size: 36px;
+    color: #820000;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.btn-paket {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #820000, #510202);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-paket:hover {
+    background-image: linear-gradient(to bottom, #820000, #bf0e0e);
+    color: #fff;
+}
+
+.paket {
+    padding: 0 4em;
+}
+
+.form-container {
+    max-width: 100px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-keranjang input {
+    width: 30%;
+    padding: 10px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #f84b01e5;
+    outline: none;
+    box-shadow: 0 0 5px #f84b01e5;
+}
+
+.keranjang {
+    width: 10%;
+    padding: 10px;
+    background-color: #f84b01e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #df4402e5;
+}
+
+.keranjang-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.delete {
+    background-color: #e74c3c;
+    /* Red background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove default border */
+    padding: 5px 10px;
+    /* Add some padding */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 14px;
+    /* Font size */
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.table-btn {
+    border: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    width: 20%;
+}
+
+th {
+    font-size: 20px;
+}
+
+.title-table {
+    text-align: center;
+}
+
+.title-table span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.title-paket {
+    text-align: left;
+}
+
+.title-table {
+    text-align: center;
+}
+
+.checkmark::before {
+    content: "\2713";
+    color: #4CAF50;
+    font-size: 30px;
+    line-height: 1;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.crossmark::before {
+    content: "\2717";
+    color: #FF5733;
+    font-size: 24px;
+    line-height: 1;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-distributed {
+    background-color: #820000;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 4em;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer left */
+.footer-left {
+    padding-left: 2em;
+}
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+    width: 70%;
+}
+
+.footer-distributed span {
+    color: #f8f7f6;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-text {
+    color: #fefdfd;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+.footer-center {
+    padding-left: 2em;
+}
+
+.footer-distributed .footer-center .footer-title {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-distributed .footer-center a {
+    color: #b3b1b1;
+    vertical-align: middle;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+
+/* Footer Right */
+.footer-right {
+    padding-left: 6em;
+}
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.pesan-lain {
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    color: #ffffff;
+    background-color: #FF5733;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pesan-lain:hover {
+    background-color: #820000;
+    /* Darker background color on hover */
+    text-decoration: underline;
+}
+
+.payment-info-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.payment-info-content {
+    font-size: 16px;
+    color: #333;
+}
+
+.status-pending {
+    color: #ffa500;
+    /* Orange for pending */
+}
+
+.status-paid {
+    color: #28a745;
+    /* Green for paid */
+}
+
+.status-unknown {
+    color: #dc3545;
+    /* Red for unknown status */
+}
+
+.btn-order {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-order:hover {
+    background-color: #0056b3;
+}
+
+/* responsive */
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .beranda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-image img {
+        max-width: 350px;
+    }
+
+    .food-link {
+        display: flex;
+        flex-direction: column;
+        margin: 10px
+    }
+
+    .section-image2 img {
+        max-width: 350px;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    .food-link2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .table-responsive {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        white-space: nowrap;
+    }
+
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    .some-element {
+        width: 100%;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .food-link2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .footer-distributed {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
